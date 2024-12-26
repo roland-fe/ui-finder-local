@@ -5,9 +5,9 @@ It finds all active devices in the specified subnet and checks
 if a web interface (port 80 or 443) is reachable.
 
 Usage:
-    ./network_scanner.py <subnet>
+    ./ui-finder-local.py <subnet>
 Example:
-    ./network_scanner.py 192.168.178.0/24
+    ./ui-finder-local.py 192.168.178.0/24
 """
 
 import sys
@@ -18,8 +18,8 @@ from requests.exceptions import RequestException
 def main():
     # Check if a subnet argument was provided
     if len(sys.argv) < 2:
-        print("Usage: python3 network_scanner.py <subnet>")
-        print("Example: python3 network_scanner.py 192.168.178.0/24")
+        print("Usage: python3 ui-finder-local.py <subnet>")
+        print("Example: python3 ui-finder-local.py 192.168.178.0/24")
         sys.exit(1)
 
     subnet = sys.argv[1]
@@ -172,7 +172,7 @@ def main():
 """
 
     # Write HTML to file
-    output_filename = "scan_ergebnisse.html"
+    output_filename = "scan_result.html"
     try:
         with open(output_filename, "w", encoding="utf-8") as f:
             f.write(html_content)
