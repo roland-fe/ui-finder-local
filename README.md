@@ -1,6 +1,6 @@
 # Network Scanner for macOS (Non-Sudo)
 
-A simple Python 3 script to scan a local subnet for active devices without requiring `sudo`. It uses **TCP Connect Scanning** to discover hosts with open ports on 80 or 443, and then checks for a reachable web interface. An HTML report (called `scan_ergebnisse.html`) is also generated.
+A simple Python 3 script to scan a local subnet for active devices without requiring `sudo`. It uses **TCP Connect Scanning** to discover hosts with open ports on 80 or 443, and then checks for a reachable web interface. An HTML report (called `scan_result.html`) is also generated.
 
 ## Features
 - **TCP Connect Scan** (no sudo required on macOS)
