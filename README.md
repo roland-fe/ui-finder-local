@@ -52,21 +52,21 @@ A simple Python 3 script to scan a local subnet for active devices without requi
 
 1. **Make the script executable (if needed):**
     ```bash
-    chmod +x network_scanner.py
+    chmod +x ui-finder-local.py
     ```
 
 2. **Run the scanner (example subnet `192.168.178.0/24`):**
     ```bash
-    ./network_scanner.py 192.168.178.0/24
+    ./ui-finder-local.py 192.168.178.0/24
     ```
    Or explicitly call Python:
     ```bash
-    python3 network_scanner.py 192.168.178.0/24
+    python3 ui-finder-local.py 192.168.178.0/24
     ```
 
 3. **View the generated HTML report:**
-    - After the script finishes, it writes an HTML file named `scan_ergebnisse.html` in the current folder.
+    - After the script finishes, it writes an HTML file named `scan_result.html` in the current folder.
     - Open it in your web browser:
       ```bash
-      open scan_ergebnisse.html
+      open scan_result.html
       ```
