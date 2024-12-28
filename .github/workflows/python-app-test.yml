@@ -26,4 +26,4 @@ jobs:
 
     - name: Run script
       run: |
-        python ui-finder-local.py
+        python ui-finder-local.py 192.168.178.0/24
