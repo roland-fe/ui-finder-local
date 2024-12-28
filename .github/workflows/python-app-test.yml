@@ -24,6 +24,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Install nmap
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y nmap
+
     - name: Run script
       run: |
         python ui-finder-local.py 192.168.178.0/24
